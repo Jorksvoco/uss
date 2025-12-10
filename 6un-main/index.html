@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Worm Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Apple Worm</h1>
+  <div id="hud">
+    <div id="controls">Controls: Arrow or WASD keys to move • ESC to open menu • R to reset level</div>
+      <div id="hudButtons">
+        <button id="soundToggle" title="Toggle sound" aria-pressed="true">♪</button>
+      </div>
+  </div>
+  <h3 id="levelTitle"></h3>
+  <div id="menu" class="menu">
+    <div class="menu-inner">
+      <h2>Select Level</h2>
+      <div id="levelList" class="level-list level-grid"></div>
+      <div class="menu-nav">
+        <button id="menuPrev" class="arrow-btn">◀</button>
+        <div class="page-indicator" id="pageIndicator"></div>
+        <button id="menuNext" class="arrow-btn">▶</button>
+      </div>
+      <div class="menu-actions">
+        <button id="closeMenu">Close</button>
+      </div>
+    </div>
+  </div>
+  <div id="game"></div>
+  <script src="game_blocks.js"></script>
+</body>
+</html>
